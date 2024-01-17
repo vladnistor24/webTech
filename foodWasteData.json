@@ -1,0 +1,72 @@
+[
+  {
+    "_id": {
+      "$oid": "657f095648000ad824b91e58"
+    },
+    "name": "Family Group",
+    "members": ["Mother", "Father", "Son", "Daughter"],
+    "preferences": {
+      "vegetarian": true,
+      "allergies": ["nuts", "dairy"],
+      "favoriteFoods": ["pizza", "salad", "salmon"]
+    },
+    "createdBy": "Father",
+    "description": "This group is dedicated to sharing the surplus of food with those in need"
+  },
+  {
+    "_id": {
+      "$oid": "657f095648000ad824b91e59"
+    },
+    "name": "Friendship Group 1",
+    "members": ["Alice", "Bob", "Charlie"],
+    "preferences": {
+      "vegetarian": false,
+      "allergies": ["gluten"],
+      "favoriteFoods": ["burger", "pasta", "chocolate"]
+    },
+    "createdBy": "Alice",
+    "description": "A group of friends who love trying out new foods"
+  },
+  {
+    "_id": {
+      "$oid": "657f095648000ad824b91e5a"
+    },
+    "name": "Colleague Group",
+    "members": ["Colleague A", "Colleague B", "Colleague C"],
+    "preferences": {
+      "vegetarian": true,
+      "allergies": [],
+      "favoriteFoods": ["sushi", "quinoa", "fruit"]
+    },
+    "createdBy": "Colleague A",
+    "description": "A group of colleagues who share their lunch during office hours"
+  },
+  {
+    "_id": {
+      "$oid": "657f095648000ad824b91e5b"
+    },
+    "name": "Friendship Group 2",
+    "members": ["David", "Eve", "Frank"],
+    "preferences": {
+      "vegetarian": true,
+      "allergies": ["soy"],
+      "favoriteFoods": ["tofu", "salad", "smoothies"]
+    },
+    "createdBy": "David",
+    "description": "Another group of friends with shared food interests"
+  },
+  {
+    "_id": {
+      "$oid": "657f095648000ad824b91e5c"
+    },
+    "name": "Study Group",
+    "members": ["Student 1", "Student 2", "Student 3"],
+    "preferences": {
+      "vegetarian": false,
+      "allergies": ["peanuts"],
+      "favoriteFoods": ["ramen", "sandwiches", "chips"]
+    },
+    "createdBy": "Student 1",
+    "description": "A group of students who study together and share snacks"
+  }
+]
