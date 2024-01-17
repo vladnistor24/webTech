@@ -1,22 +1,110 @@
+/* public/styles.css */
+
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  background-image: url('https://d16kd6gzalkogb.cloudfront.net/magazine_images/Food-Art-by-Dan-Cretu-via-dancretu.tumblr.com-.jpg'); 
+  background-size: cover;
+  background-position: center;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
   margin: 0;
+  background-repeat: no-repeat;
+  color: #333;
   padding: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   height: 100vh;
 }
 
-h1 {
-  color: #333;
+.container {
   text-align: center;
-  margin-bottom: 20px; 
 }
 
-a.testing {
+h1 {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.testing {
+  display: inline-block;
+  padding: 15px;
+  margin: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.testing:hover {
+  background-color: #45a049;
+}
+
+#message {
+  display: inline-block;
+  margin-left: 20px;
+  color: #333;
+  font-size: 16px;
+}
+
+#auth-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the form container */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Adjust the width as needed */
   text-align: center;
-  margin-top: 20px; 
+}
+
+h2 {
+  color: #4CAF50; /* Green color for section headers */
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#product-container {
+  margin-top: 20px;
+}
+
+#product-list {
+  list-style: none;
+  padding: 0;
+}
+
+#groups-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
 }
