@@ -1,13 +1,10 @@
-// groups.js
 document.addEventListener('DOMContentLoaded', async () => {
     const groupsContainer = document.getElementById('groups-container');
   
     try {
-      // Fetch the JSON data
       const response = await fetch('foodWasteData.json');
       const groupsData = await response.json();
   
-      // Create HTML elements to display the data
       groupsData.forEach(group => {
         const groupDiv = document.createElement('div');
         groupDiv.classList.add('group');

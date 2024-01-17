@@ -6,7 +6,6 @@ const productSchema = new mongoose.Schema({
   expirationDate: { type: Date },
   isAvailable: { type: Boolean, default: false },
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-  // Add other fields as needed
 });
 
 const Product = mongoose.model('Product', productSchema);

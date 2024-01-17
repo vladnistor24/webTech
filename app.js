@@ -1,7 +1,6 @@
 
-const baseUrl = 'http://localhost:5000/api'; // Replace 5000 with your actual server port
+const baseUrl = 'http://localhost:5000/api'; 
 
-// Register user
 async function registerUser() {
   const username = document.getElementById('username').value;
   const email = document.getElementById('email').value;
@@ -64,9 +63,7 @@ console.log('data2', data2);
     if (response.ok) {
       const data = await response.json();
       alert(`Login successful! Token: ${data.token}`);
-      // Save the token to use in future requests (e.g., product retrieval)
       localStorage.setItem('token', data.token);
-      // Reload the page to fetch and display available products
       location.reload();
     } else {
       const data = await response.json();
@@ -77,23 +74,15 @@ console.log('data2', data2);
   }
 }
 
-// Logout user
 function logoutUser() {
-    // Remove the token from local storage
     localStorage.removeItem('token');
-  
-    // Clear the displayed user information
     const loggedInUser = document.getElementById('loggedInUser');
     loggedInUser.innerHTML = '';
-  
-    // Optionally, redirect the user to the login page or perform any other action
   }
 
 
-// Fetch and display available products
 async function displayProducts() {
   try {
-    // Get token from local storage (assuming you saved it after login)
     const token = localStorage.getItem('token');
 
     const response = await fetch(`${baseUrl}/products`, {
@@ -116,8 +105,6 @@ async function displayProducts() {
     console.error('Error:', error);
   }
 }
-
-// Load available products when the page loads
 document.addEventListener('DOMContentLoaded', () => {
   displayProducts();
 });
